@@ -1,0 +1,7 @@
+
+[
+  {
+    "host" : "~/",
+    "guest" : "/home/vagrant/host_home"
+  }
+]

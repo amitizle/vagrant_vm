@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+site "https://supermarket.getchef.com/api/v1"
+
+# Dev tools
+cookbook 'tmux'
+cookbook 'git'
+cookbook 'vim'
+
+# Programming
+cookbook 'build-essential'
+cookbook 'erlang'
+cookbook 'ruby_build'
+cookbook 'ruby_rbenv'

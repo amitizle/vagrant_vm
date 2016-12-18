@@ -1,0 +1,37 @@
+
+{
+  "erlang": {
+    "install_method" : "source",
+    "gui_tools" : true,
+    "source" : {
+      "version" : "18.3"
+    }
+  },
+  "rbenv" : {
+    "user_installs" : [
+      {
+        "user" : "vagrant",
+        "rubies" : ["2.3.3", "2.4.0-rc1"],
+        "global" : "2.3.3"
+      }
+    ]
+  },
+  "vim"  : {
+    "install_method" : "source",
+    "source" : {
+      "version" : "8.0",
+      "checksum" : "2e179182814715c3c77010c7300a4abcb964ba8a99a470640f9f2f03884b2ccb"
+    }
+  },
+  "run_list": [
+    "recipe[git]",
+    "recipe[tmux]",
+    "recipe[vim]",
+    "recipe[build-essential]",
+    "recipe[erlang]",
+    "recipe[ruby_build]",
+    "recipe[ruby_rbenv::user]",
+    "recipe[sqlite3]"
+  ]
+}
+
